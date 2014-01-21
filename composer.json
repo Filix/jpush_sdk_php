@@ -1,5 +1,5 @@
 {
-    "name": "Filix/jpush-bundle",
+    "name": "filix/jpush-bundle",
     "type": "symfony-bundle",
     "description": "This Bundle provides like functionality for Jpush(jpush.cn)",
     "keywords": ["jpush", "sdk"],
