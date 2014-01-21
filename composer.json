@@ -1,0 +1,32 @@
+{
+    "name": "Filix/jpush-bundle",
+    "type": "symfony-bundle",
+    "description": "This Bundle provides like functionality for Jpush(jpush.cn)",
+    "keywords": ["jpush", "sdk"],
+    "homepage": "https://github.com/Filix/jpush_sdk_php/",
+    "license": "MIT",
+    "authors": [{
+        "name": "Filix",
+        "email": "syp.syl@gmail.com"
+    }],
+    "support": {
+        "issues": "https://github.com/Filix/jpush_sdk_php/issues"
+    },
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "suggest": {
+
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.1.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-0": {
+            "Filix\\JpushBundle": ""
+        }
+    },
+    "target-dir": "Filix/JpushBundle"
+}
