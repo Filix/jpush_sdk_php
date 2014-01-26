@@ -9,6 +9,7 @@ namespace Filix\JpushBundle\Util;
  */
 class Message
 {
+
     const RECEIVER_TYPE_TAG = 2;
     const RECEIVER_TYPE_ALIAS = 3;
     const RECEIVER_TYPE_ALL = 4;
@@ -23,7 +24,7 @@ class Message
     protected $msg_type;
     protected $msg_content;
     protected $send_description;
-    protected $platform;
+    protected $platform = array();
     protected $apns_production = 0;
     protected $time_to_live = 0;
     protected $override_msg_id;
@@ -55,6 +56,13 @@ class Message
     public function getReceiverValue()
     {
         return $this->receiver_value;
+    }
+
+    public function addReceiverValue($value)
+    {
+        $this->receiver_value[] = $value;
+
+        return $this;
     }
 
     public function setReceiverValue(array $receiver_value)
